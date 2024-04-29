@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeskSpace</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mobile-nav-menu">
+      <div class="mobile-menu-top">
+        <h1 class="company-title-menu">DeskSpace</h1>
+        <button class="close-menu" onclick="closeMenu()">X</button>
+      </div>
+      <ul>
+        <li class="nav-item">
+          <a>Locations</a>
+        </li>
+        <li class="nav-item">
+          <a>Explore Spaces</a>
+        </li>
+        <li class="nav-item">
+          <a>Space Facilities</a>
+        </li>
+        <li class="nav-item"><a href="">About</a></li>
+      </ul>
+    </div>
+
+    <nav class="nav-bar">
+      <div class="nav-bar-left">
+        <h1 class="company-title">DeskSpace</h1>
+        <ul>
+          <li class="nav-item">
+            <p>Locations</p>
+            <img class="arrow" src="assets/arrow.png" />
+            <div class="navdropdownmenu">
+              <a class="navdropdownitem">Nottingham</a>
+              <a class="navdropdownitem">London</a>
+              <a class="navdropdownitem">Leeds</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <p>Explore Spaces</p>
+            <img class="arrow" src="assets/arrow.png" />
+            <div class="navdropdownmenu">
+              <a class="navdropdownitem">Open Spaces</a>
+              <a class="navdropdownitem">Efficient Spaces</a>
+              <a class="navdropdownitem">360 View</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <p>Space Facilities</p>
+            <img class="arrow" src="assets/arrow.png" />
+            <div class="navdropdownmenu">
+              <a class="navdropdownitem">Something</a>
+              <a class="navdropdownitem">Something else</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-bar-right">
+        <button class="search-offices-button">Search Offices</button>
+      </div>
+    </nav>
+
+    <nav class="mobile-nav-bar">
+      <h1 class="company-title-mobile">DeskSpace</h1>
+      <img
+        class="menu-icon"
+        src="assets/menu.png"
+        alt="menu"
+        onclick="openMenu()"
+      />
+    </nav>
+
+    <section class="section-one-container">
+      <div class="section-one">
+        <div class="section-one-left">
+          <h2>Flexible coworking spaces</h2>
+          <p>
+            Find the office that’s right for you. With beautifully designed Work
+            Spaces and flexible contracts, you can find a home for your
+            business, and access over 40 lounges whether you’re an established
+            organisation or new venture.
+          </p>
+          <form
+            class="search-area-section-one"
+            action="/offices/search"
+            method="get"
+          >
+            <div class="office-location-container">
+              <label for="office_location"
+                ><img class="label-image" src="assets/location-png.png" />Select
+                office location</label
+              >
+              <select
+                class="custom-select"
+                id="custom-select"
+                name="office_location"
+              >
+                <option class="dropdownitem" value="Nottingham">
+                  Nottingham
+                </option>
+                <option class="dropdownitem" value="London" selected>
+                  London
+                </option>
+                <option class="dropdownitem" value="Leeds">Leeds</option>
+              </select>
+            </div>
+            <div class="number-of-people-container">
+              <label for="number_of_people"
+                ><img class="label-image" src="assets/people-png.png" />Select
+                number of people</label
+              >
+              <select id="number_of_people" name="number_of_people">
+                <option
+                  class="dropdownitem"
+                  class="dropdownitem"
+                  value="1-2_people"
+                >
+                  1-2 People
+                </option>
+                <option class="dropdownitem" value="2-5_people" selected>
+                  2-5 People
+                </option>
+                <option class="dropdownitem" value="5-10_people">
+                  5-10 People
+                </option>
+                <option class="dropdownitem" value="10-20_people">
+                  10-20 People
+                </option>
+              </select>
+            </div>
+            <button type="submit" class="submit-button">Search Offices</button>
+          </form>
+        </div>
+        <div class="office-image-container">
+          <img class="office-image" src="assets/office.png" alt="office" />
+          <div class="rectangle"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-two">
+      <h4>The world's leading brands choose DeskSpace</h4>
+      <div class="logos">
+        <img class="logo" src="assets/logos/google.png" alt="Google" />
+        <img class="logo" src="assets/logos/facebook.png" alt="Facebook" />
+        <img class="logo" src="assets/logos/youtube.png" alt="YouTube" />
+        <img class="logo" src="assets/logos/pinterest.png" alt="Pinterest" />
+        <img class="logo" src="assets/logos/tiktok.png" alt="TikTok" />
+        <img class="logo" src="assets/logos/facebook.png" alt="Facebook" />
+      </div>
+    </section>
+
+    <section class="section-three">
+      <h3>Design led work spaces</h3>
+      <div class="section-three-text">
+        <p>
+          Find the office that’s right for you. With beautifully designed Work
+          Spaces and flexible contracts, you can find a home for your business,
+          and access over 40 lounges whether you’re an established organisation
+          or new venture.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-four">
+      <div class="section-four-image">
+        <img
+          class="office-image"
+          src="assets/section-four-image.png"
+          alt="office"
+        />
+      </div>
+      <div class="section-four-text">
+        <h4>Space to work</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-five">
+      <h4>Why choose DeskSpace?</h4>
+      <div class="section-five-grid">
+        <div class="section-five-grid-item">
+          <h5>No minimum contracts</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="section-five-grid-item">
+          <h5>Designed spcaes</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+        </div>
+        <div class="section-five-grid-item">
+          <h5>Desirable locations</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="section-five-grid-item">
+          <h5>Best in class connectivity</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-six">
+      <img
+        class="carousel-image"
+        src="assets/carousel-image-one.png"
+        alt="office"
+      />
+      <img
+        class="left carousel-arrow"
+        src="assets/arrow-large.png"
+        alt="left-arrow"
+        onclick="prevImage()"
+      />
+      <img
+        class="right carousel-arrow"
+        src="assets/arrow-large.png"
+        alt="right-arrow"
+        onclick="nextImage()"
+      />
+      <div class="tabs">
+        <div class="tab selected"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+        <div class="tab"></div>
+      </div>
+    </section>
+
+    <section class="section-seven">
+      <h4>With over 25 spaces across the UK</h4>
+      <h3>Let's find your new DeskSpace</h3>
+      <form class="search-area" action="/offices/search" method="get">
+        <div class="office-location-container">
+          <label for="office_location"
+            ><img class="label-image" src="assets/location-png.png" />Select
+            office location</label
+          >
+          <select id="office_location" name="office_location">
+            <option class="dropdownitem" value="Nottingham">Nottingham</option>
+            <option class="dropdownitem" value="London" selected>London</option>
+            <option class="dropdownitem" value="Leeds">Leeds</option>
+          </select>
+        </div>
+        <div class="number-of-people-container">
+          <label for="number_of_people"
+            ><img class="label-image" src="assets/people-png.png" />Select
+            number of people</label
+          >
+          <select id="number_of_people" name="number_of_people">
+            <option
+              class="dropdownitem"
+              class="dropdownitem"
+              value="1-2_people"
+            >
+              1-2 People
+            </option>
+            <option class="dropdownitem" value="2-5_people" selected>
+              2-5 People
+            </option>
+            <option class="dropdownitem" value="5-10_people">
+              5-10 People
+            </option>
+            <option class="dropdownitem" value="10-20_people">
+              10-20 People
+            </option>
+          </select>
+        </div>
+        <button type="submit" class="submit-button">Search Offices</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <h4>DeskSpace</h4>
+        <ul>
+          <li><a>Locations</a></li>
+          <li><a>Explore Spaces</a></li>
+          <li><a>Space Facilities</a></li>
+          <li><a>About</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>©2022 DeskSpace. All rights reserved</p>
+        <a href="">Privacy Policy</a>
+        <a href="">Terms & Conditions</a>
+      </div>
+    </footer>
+  </body>
+  <script src="js/nav.js"></script>
+  <script src="js/carousel.js"></script>
+</html>
